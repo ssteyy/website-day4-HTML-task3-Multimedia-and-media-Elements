@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media with Custom Controls</title>
+    
+</head>
+<body>
+
+    <!-- Video Section with Custom Controls -->
+    <section>
+        <h2>Custom Controls for Video</h2>
+        <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div class="controls">
+            <button id="play-video">Play</button>
+            <button id="pause-video">Pause</button>
+        </div>
+    </section>
+
+    <!-- Audio Section with Custom Controls -->
+    <section>
+        <h2>Custom Controls for Audio</h2>
+        <audio id="audio" controls>
+            <source src="your-audio-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="controls">
+            <button id="play-audio">Play</button>
+            <button id="pause-audio">Pause</button>
+            <label for="volume-control">Volume</label>
+            <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+        </div>
+    </section>
+
+    
+
+</body>
+</html>
